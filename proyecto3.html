@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>El Carrito de las Chinas</title>
+
+    <style>
+        :root {
+            --negro: #000;
+            --blanco: #fff;
+            --beige: #f3ead7;
+            --gris: #2b2b2b;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--beige);
+            color: var(--gris);
+        }
+
+        /* HEADER */
+        .header {
+            background-color: var(--negro);
+            color: var(--blanco);
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 30px 50px;
+        }
+
+        .header img {
+            width: 150px;
+        }
+
+        .titulo h1 {
+            font-size: 44px;
+            margin: 0;
+        }
+
+        .titulo p {
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        nav {
+            background-color: var(--gris);
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--blanco);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--negro);
+        }
+
+        /* PRODUCTOS */
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .producto {
+            background-color: var(--blanco);
+            border: 2px solid var(--negro);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        /* GALERIA */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+            justify-items: center;
+        }
+
+        .galeria img {
+            width: 180px;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 2px solid var(--negro);
+        }
+
+        /* UBICACION */
+        .mapa {
+            border: 2px solid var(--negro);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+
+        footer {
+            background-color: var(--negro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 18px;
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .header img {
+                width: 160px;
+            }
+
+            .titulo h1 {
+                font-size: 32px;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <img src="https://i.postimg.cc/R32SpSkQ/IMG-20260131-WA0000.jpg"alt="El Carrito de las Chinas">
+    <div class="titulo">
+        <h1>El Carrito de las Chinas</h1>
+        <p>Snacks de todo para cualquier antojo 😋</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Menú</a>
+    <a href="#">Galería</a>
+    <a href="#">Ubicación</a>
+</nav>
+
+<main>
+
+    <section>
+        <h2>📅 Días de Servicio</h2>
+        <p><strong>Viernes y sábados</strong><br>De 6:00 p.m. a 10:00 p.m.</p>
+    </section>
+
+    <section>
+        <h2>🍿 Menú</h2>
+        <div class="productos">
+            <div class="producto">Dorilocos</div>
+            <div class="producto">Mini Hotcakes</div>
+            <div class="producto">Esquites preparados</div>
+            <div class="producto">Vasitos con papas</div>
+            <div class="producto">Cacahuates de todo tipo</div>
+            <div class="producto">Snacks dulces y picositos 🌶️</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>📸 Galería</h2>
+        <div class="galeria">
+            <img src="https://i.postimg.cc/GB6LgLWz/IMG-20260131-WA0001.jpg">
+            <img src="https://i.postimg.cc/QBv8Y820/IMG-20260131-WA0005.jpg">
+            <img src="https://i.postimg.cc/rd7VZVBG/IMG-20260131-WA0004.jpg">
+        </div>
+    </section>
+
+    <section>
+        <h2>📍 Ubicación</h2>
+        <div class="mapa">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235.03612754616384!2d-99.21638284516048!3d19.516781761098148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1769842681372!5m2!1ses-419!2smx"
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 El Carrito de las Chinas</p>
+</footer>
+
+<a href="https://wa.me/5529389128" class="whatsapp" target="_blank">
+    💬 WhatsApp
+</a>
+
+</body>
+</html>
